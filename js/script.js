@@ -20,7 +20,7 @@
 /**/
 
 // VARIABLES
-
+/*
 var userDecision = prompt('Decide between: Odd or Even?').toLowerCase().trim();
 console.log(userDecision);
 
@@ -48,7 +48,7 @@ if(result === userDecision) {
  * UTILITIES 
  * 
 /**/
-
+/*
 function randomNumber(min, max) {
     var randomNumber = Math.floor(Math.random() * max - min + 1) + min;
 
@@ -63,7 +63,7 @@ function oddOrEven(number) {
 
     return 'odd';
 }
-
+*/
 
 
 
@@ -77,7 +77,7 @@ function oddOrEven(number) {
 /**/
 
 // VARIABLE
-/*
+
 var userWord = prompt('Please enter a word here').toLowerCase().trim();
 console.log(userWord);
 
@@ -86,12 +86,10 @@ var isPalindromes = isPalindrome(userWord);
 
 // DECISION TO DETERMINE IF THE WORD IS PALINDROME OR NOT
 
-switch(userWord === isPalindromes) {
-    case userWord === isPalindromes:
-        console.log('La parola: ' + userWord +' è Palindroma!');
-        break;
-    default:
-        console.log('La parola: ' + userWord +' non è Palindroma...');
+if(isPalindromes === userWord) {
+    console.log('The word ' + userWord + ' is Palindrome!!!');
+} else {
+    console.log('The word ' + userWord + ' is not Palindrome...');
 }
 
 /**
@@ -106,7 +104,7 @@ switch(userWord === isPalindromes) {
  * @param {word} word // TO UNDERSTAND IF THE WORD IS PALINDROME
  * @returns isPalindromes
  */
-/*
+
 function isPalindrome(word) {
     var isPalindromes = '';
 
@@ -117,4 +115,3 @@ function isPalindrome(word) {
 
     return isPalindromes;
 }
-*/
